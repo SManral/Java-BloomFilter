@@ -43,15 +43,15 @@ public class BloomFilterFNV {
 	
 	public boolean appears(String s){
 		if (s == null) {
-            return false;
-        }
+            		return false;
+        	}
 		byte[] b = s.getBytes(StandardCharsets.UTF_8);
 		for (int index : fnvHash(b)) { 
-            if (!bloomFilter.get(index)) { 
-                return false; 
-            } 
-        } 
-       return true; 	
+			if (!bloomFilter.get(index)) { 
+				return false; 
+			} 
+        	} 
+       		return true; 	
 	}
 	
 	public int filterSize(){
