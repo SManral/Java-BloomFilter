@@ -1,6 +1,6 @@
-test1:
+updated_con:
     key1: val1
-    key2: val2
+    key2: updated_val2
 test2:
     key11: val11
-    key22: val22
+    updated_key22: val22
